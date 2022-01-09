@@ -1,5 +1,7 @@
 import React from "react";
-import { Image, StyleSheet, View } from "react-native";
+import { Image, StyleSheet, View } from "react-native"; //3rd party libraries
+
+import colors from "../config/colors"; //Local code
 
 function ViewImageScreen(props) {
 	return (
@@ -17,13 +19,13 @@ function ViewImageScreen(props) {
 
 const styles = StyleSheet.create({
 	container: {
-		backgroundColor: "#000",
+		backgroundColor: "#000", //Some even say that even black and white should be on the palette file
 		flex: 1,
 	},
 	closeIcon: {
 		width: 50,
 		height: 50,
-		backgroundColor: "#fc5c65",
+		backgroundColor: colors.primary,
 		position: "absolute",
 		top: 40,
 		left: 30,
@@ -31,7 +33,7 @@ const styles = StyleSheet.create({
 	deleteIcon: {
 		width: 50,
 		height: 50,
-		backgroundColor: "#4ecdc4",
+		backgroundColor: colors.secondary,
 		position: "absolute",
 		top: 40,
 		right: 30,
